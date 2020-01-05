@@ -27,5 +27,5 @@ jobs:
       - run: docker-compose run -d --no-deps web
       - run: echo "$DEPLOY"
       - run: $DEPLOY
-      - run: ssh ec2-user@ec2-54-172-46-219.compute-1.amazonaws.com 'bash -s' < ../deploy.sh
+      - run: ssh ec2-user@ec2-54-172-46-219.compute-1.amazonaws.com 'bash -s' < deploy.sh
       - run: exit
