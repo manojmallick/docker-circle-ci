@@ -1,0 +1,13 @@
+{
+  "name": "node-docker-workflow",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "mocha": "^2.3.3",
+    "redis": "^2.2.5"
+  }
+}
