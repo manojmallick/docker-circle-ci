@@ -24,4 +24,4 @@ jobs:
       #- run: sudo pip3 install --upgrade docker-compose==1.3.3
 
       # run tests!
-      - run: docker-compose run -d --no-deps web
+      - run: docker-compose build -d --no-deps web
