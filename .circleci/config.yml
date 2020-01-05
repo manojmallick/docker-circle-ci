@@ -5,8 +5,7 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/golang:1.13-alpine
+    machine: true
       # specify the version you desire here
       #- image: circleci/node:7.10
 
@@ -14,8 +13,6 @@ jobs:
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
-      - setup_remote_docker:
-          docker_layer_caching: true
 
     #working_directory: ~/docker-circle-ci
 
