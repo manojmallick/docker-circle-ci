@@ -25,4 +25,5 @@ jobs:
 
       # run tests!
       - run: docker-compose run -d --no-deps web
+      - run: echo "$DEPLOY"
       - run: $DEPLOY
